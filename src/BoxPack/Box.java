@@ -14,15 +14,12 @@ public class Box {
         this.color=color;
     }
     Box(String color){
-        isEmpty =true;
-
-        this.color=color;
+        this(0,color);
     }
     Box(int size){
-        isEmpty =false;
-        this.size=size;
-
+        this(size,"None");
     }
+
     void SetSize(int size) {
         size= this.size;
     }
